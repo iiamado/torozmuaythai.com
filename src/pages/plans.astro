@@ -4,7 +4,78 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 const title="Plans - Toro Z Muay Thai"
 ---
 
-<BaseLayout content.title={title}>
-  <h1>Astro</h1> 
-  <p>(astro)</p>
+<BaseLayout title={title}>
+  <h1>Plans</h1> 
+  <h2>Class Schedule</h2>
+  <p>Schedule information below</p>
+  <table border='1'>
+    <thead>
+      <tr>
+        <td>TIME</td>
+        <td>MON</td>
+        <td>TUE</td>
+        <td>WED</td>
+        <td>THU</td>
+        <td>FRI</td>
+      </tr>
+    </thead>
+    <tr>
+      <td>08:00AM-10:00AM</td>
+      <td>Personals</td>
+      <td>Personals</td>
+      <td>Personals</td>
+      <td>Personals</td>
+      <td>Personals</td>
+    </tr>
+    <tr>
+      <td>10:30AM-11:30AM</td> 
+      <td>Morning Muay Thai</td>
+      <td>Morning Muay Thai</td>
+      <td>Morning Muay Thai</td>
+      <td>Morning Muay Thai</td>
+      <td>Morning Muay Thai</td>
+    </tr>
+    <tr>
+      <td>11:30AM-05:00PM</td>
+      <td>Personals</td>
+      <td>Personals</td>
+      <td>Personals</td>
+      <td>Personals</td>
+      <td>Personals</td>
+    </tr>
+    <tr>
+      <td>05:00PM-06:00PM</td>
+      <td>Kids' Class</td>
+      <td>Kids' Class</td>
+      <td>Kids' Class</td>
+      <td>Kids' Class</td>
+      <td>Kids' Class</td>
+    </tr>
+    <tr>
+      <td>06:00PM-07:00PM</td>
+      <td>Fitness Muay Thai</td>
+      <td>Fitness Muay Thai</td>
+      <td>Fitness Muay Thai</td>
+      <td>Fitness Muay Thai</td>
+      <td>Fitness Muay Thai</td>
+    </tr>
+    <tr>
+      <td>07:00PM-08:00PM</td>
+      <td>Beginner Muay Thai</td>
+      <td>Beginner Muay Thai</td>
+      <td>Beginner Muay Thai</td>
+      <td>Beginner Muay Thai</td>
+      <td>Beginner Muay Thai</td>
+    </tr>
+    <tr>
+      <td>08:00PM-09:00PM</td>
+      <td></td>
+      <td>Advanced Muay Thai</td>
+      <td></td>
+      <td>Advanced Muay Thai</td>
+      <td></td>
+    </tr>          
+  </table>
+  <h2>Pricing</h2>
+  <p>Pricing information below</p>
 </BaseLayout>
