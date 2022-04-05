@@ -1,0 +1,20 @@
+@font-face {
+  src: url(/MedulaOne-w5Dw.ttf);
+  font-family: medulaOne;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 0.4em;
+  font-family: medulaOne;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: medulaOne;
+}
+
+p {
+  color: #555555;
+  font-family: Verdana, sans-serif;
+}
