@@ -1,5 +1,4 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
 import styles from '../styles/styles.css'
 const {title} = Astro.props;
 ---
@@ -12,6 +11,17 @@ const {title} = Astro.props;
     <link rel="stylesheet" href="../styles/styles.css"
   </head>
 	<body>
+    <div class="navbar">
+      <a href="index"><img src="/favicon.png" />
+      <nav>
+        <ul>
+          <li><a href="index"> Home </a></li>
+          <li><a href="about"> About </a></li>
+          <li><a href="plans"> Plans </a></li>
+          <li><a href="news"> News </a></li>
+        </ul>
+      </nav>
+    </div>
 		<slot />
 	</body>
 </html>
