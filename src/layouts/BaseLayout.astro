@@ -1,27 +1,37 @@
 ---
 import styles from '../styles/styles.css'
+import navbar from '../styles/navbar.css'
 const {title} = Astro.props;
 ---
 <html lang="en">
-	<head>
+	
+  <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    <link rel="stylesheet" href="../styles/styles.css"
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
   </head>
-	<body>
+	
+  <body>
     <div class="navbar">
-      <a href="index"><img src="/favicon.png" />
-      <nav>
+      <div class="flex">
+        <h3>Store (Coming Soon)</h3>
+        <a href=""><img src="banner-text.png"
+          alt="Toro Z cursive logo"
+          height="60px"></a>
         <ul>
-          <li><a href="index"> Home </a></li>
+          <li><a href=""> Home </a></li>
           <li><a href="about"> About </a></li>
-          <li><a href="plans"> Plans </a></li>
+          <li><a href="plans"> Schedule </a></li>
           <li><a href="news"> News </a></li>
         </ul>
-      </nav>
+      </div>
     </div>
-		<slot />
+		<div class="container">
+    <slot />
+    </div>
 	</body>
+
 </html>

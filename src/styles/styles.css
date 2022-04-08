@@ -1,16 +1,6 @@
 @font-face {
-  src: url(/MedulaOne-w5Dw.ttf);
-  font-family: medulaOne;
-}
-
-@font-face {
-  src: url(/FontaniaMjXr.ttf);
-  font-family: fontania;
-}
-
-@font-face {
-  src: url(/njnaruto.ttf);
-  font-family: ninja;
+  src: url(/aAssassinNinja.otf);
+  font-family: assassin;
 }
 
 * {
@@ -23,16 +13,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 48px;
-  line-height: 0.4em;
-  font-family: medulaOne;
-}
-
-h2 {
-  font-size: 36px;
-  font-family: medulaOne;
-}
 
 p {
   color: #555555;
@@ -43,31 +23,14 @@ ul {
   list-style-type: none;
 }
 
-.navbar {
-  background-color: #111111;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar a {
-  color: #ffffff;
-  margin: 0 20px;
-}
-
-.navbar ul a:hover {
-  border-bottom: 2px #186fbc solid;
-}
-
-.navbar ul { 
-  display: flex;
-  font-family: ninja;
-  font-size: 20px;
-}
-
 .container {
   max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 40px;
+  margin: auto;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
