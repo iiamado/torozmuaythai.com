@@ -1,0 +1,64 @@
+@font-face {
+  src: url(/fonts/GreatFighter.otf);
+  font-family: fighter;
+}
+
+@font-face {
+  src: url(/fonts/DeadStock.ttf);
+  font-family: dead;
+}
+
+@font-face {
+  src: url(/fonts/ComicBook.otf);
+  font-family: comic;
+}
+
+@font-face{
+  src: url(/fonts/AtkinsonHyperlegible-Regular.ttf);
+  font-family: atkinson;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #4488cc;
+  font-family: dead;
+  font-size: 48px;
+}
+
+h2 {
+  color: #333;
+  font-family: comic;
+  font-size: 30px;
+}
+
+p {
+  color: #333;
+  font-family: atkinson;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.centered {
+  text-align: center;
+}

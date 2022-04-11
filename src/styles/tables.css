@@ -1,0 +1,22 @@
+table {
+  border: 1px #ddd solid;
+  border-collapse: collapse;
+}
+
+thead {
+  color: #fff;
+  background-color: #4488cc;
+  text-align: center;
+  font-family: comic;
+}
+
+tbody {
+  color: #333;
+  background-color: #eee;
+  font-family: comic;
+}
+
+td {
+  font-size: 24px;
+  padding: 10px;
+}

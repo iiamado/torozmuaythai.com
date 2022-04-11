@@ -1,11 +1,26 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Carousel from '../components/Carousel.astro'
 const title="Toro Z Muay Thai"
 ---
 <BaseLayout title={title}>
-  <div class="flexrow">
-    <img src="toroz-logo.png" alt="Banner photo" >
+  <Carousel>
+  <div class="container">
+
+    <h1>Who We Are</h1>
+    <p>Toro Z is a Muay Thai gym in Sacramento</p>
+
+    <h1>What We Do</h1>
+    <h2>Morning Muay Thai</h2>
+    <h2>Kids Class</h2>
+    <h2>Fitness Muay Thai</h2>
+    <h2>Beginner Muay Thai</h2>
+    <h2>Advanced Muay Thai</h2>
+
+    <h1>And Who We Teach</h1>
+    <p>Everyone.</p>
+    <p>We believe that no matter who you are, we can make a fighter out of anyone
+    who walks through our doors.</p>
+
   </div>
-  <h1>Astro</h1>
-  <p>(astro)</p>
 </BaseLayout>
