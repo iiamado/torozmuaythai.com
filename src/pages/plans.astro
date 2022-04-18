@@ -1,15 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Navbar from '../components/Navbar.astro'
+import global from '../styles/global.css'
 import tables from '../styles/tables.css'
 
-const title="Plans | Toro Z Muay Thai"
+const title="Schedule | Toro Z Muay Thai"
 ---
 
 <BaseLayout title={title}>
+  <Navbar>
+    <h1>Schedule</h1>
+    <img src="/images/2022-00-00/practice1.jpg"
+      alt="Picture after a Toro Z training session"
+      width="600px">
+  </Navbar>
+
   <div class="container">
     <div class="schedule">
-      
-      <h1>Plans</h1> 
+       
       <h2>Class Schedule</h2>
       <p>Schedule information below</p>
       
@@ -76,11 +84,11 @@ const title="Plans | Toro Z Muay Thai"
           </tr>
           <tr>
             <td>08:00PM-09:00PM</td>
-            <td>--</td>
+            <td><div class="greyed-out">N/A</div></td>
             <td>Advanced Muay Thai</td>
-            <td>--</td>
+            <td><div class="greyed-out">N/A</div></td>
             <td>Advanced Muay Thai</td>
-            <td>--</td>
+            <td><div class="greyed-out">N/A</div></td>
           </tr>          
         </tbody>
       </table>

@@ -6,7 +6,7 @@ import navbar from '../styles/navbar.css'
   <div class="container">
 
       <a href=""><img src="torozlogo.png"
-        alt="Toro Z cursive logo"
+        alt="Toro Z crest"
         height="200px">
       </a>
       
@@ -22,24 +22,11 @@ import navbar from '../styles/navbar.css'
 </div>
 
 <div class="container">
-  
   <div class="banner"> 
     <div class="flex">
 
-      <ul>
-        <div class="align-right">
-          <li> <h1>News</h1> </li>
-          <li> <h1>About Us</h1> </li>
-          <li> <h1>Classes</h1> </li>
-          <li> <h1>Contact Us</h1> </li>
-        </div>
-      </ul>
-
-      <img src="logo3.png"
-        height="500px"
-        alt="Toro Z mascot">
+     <slot /> 
 
     </div>
   </div>
-
 </div>
