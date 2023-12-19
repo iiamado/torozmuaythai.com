@@ -1,0 +1,123 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Classes</h1>
+      <h2>Schedule</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>MON/WED/FRI</th>
+          <th>TUE/THU</th>
+          <th>SAT</th>
+        </tr>
+        <tr>
+          <td>8:00am - 10:00am</td>
+          <td colspan="2">PERSONALS</td>
+        </tr>
+        <tr>
+          <td>10:30am - 11:30am</td>
+          <td colspan="2">Morning Muay Thai</td>
+          <td>Fight Camp</td>
+        </tr>
+        <tr>
+          <td>11:30am - 5:00pm</td>
+          <td colspan="2">PERSONALS</td>
+          <td>(ends 1:30pm)</td>
+        </tr>
+        <tr>
+          <td>5:00pm - 6:00pm</td>
+          <td colspan="2">Kids' Class</td>
+        </tr>
+        <tr>
+          <td>6:00pm - 7:00pm</td>
+          <td colspan="2">Fundamental Strength and Conditioning</td>
+        </tr>
+        <tr>
+          <td>7:00pm - 8:00pm</td>
+          <td colspan="2">Beginners' Muay Thai</td>
+        </tr>
+        <tr>
+          <td>8:00pm - 9:00pm</td>
+          <td>-</td>
+          <td>Advanced Muay Thai</td>
+        </tr>
+      </table>
+      <p>Official classes are <strong>closed</strong> on Sundays.</p>
+
+      <h2>Membership Pricing</h2>
+      <h3>Classes</h3>
+      <p>Toro Z offers two (2) free trial classes for prospective students.</p>
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>2x/Week</th>
+          <th>Unlimited</th>
+        </tr>
+        <tr>
+          <td colspan="2">Adults' Muay Thai</td>
+          <td>125</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td colspan="2">Adults' Fitness</td>
+          <td>120</td>
+          <td>135</td>
+        </tr>
+        <tr>
+          <td colspan="2">Adults' Fitness + Muay Thai</td>
+          <td></td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Kids' Class</td>
+          <td>6-8 y/o</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>9-12 y/o</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>13-17 y/o</td>
+          <td>100</td>
+        </tr>
+      </table>
+      <h3>Personal Training</h3>
+      <table>
+        <tr>
+          <th>10 sessions/month</th>
+          <td>50/session</td>
+        </tr>
+        <tr>
+          <th>8 sessions/month</th>
+          <td>65/session</td>
+        </tr>
+        <tr>
+          <th>4 sessions/month</th>
+          <td>70/session</td>
+        </tr>
+        <tr>
+          <th>Drop-In Personals</th>
+          <td>75/session</td>
+        </tr>
+      </table>
+
+		</main>
+		<Footer />
+	</body>
+</html>
