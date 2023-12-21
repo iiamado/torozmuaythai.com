@@ -2,6 +2,8 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ClassCard from '../components/ClassCard.astro';
+import FeedbackForm from '../components/FeedbackForm.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -13,11 +15,30 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>We make monsters.</h1>
-			<h2>Muay Thai Classes</h2>
-			<h2>Tiny Toroz</h2>
-			<h2>Fitness</h2>
-			<h2>Fight Team</h2>
+			<h1>We build beasts.</h1>
+			<p></p>
+			<ClassCard
+				href="/classes"
+				title="MUAY THAI FUNDAMENTALS"
+				body="Learn and hone your Muay Thai fundamentals with other fighters."
+			/>
+			<ClassCard
+				href="/classes"
+				title="KIDS' CLASSES"
+				body="Have your little ones join the Tiny Toroz. Aside from Muay Thai, students will improve their discipline, self-confidence, and ability to work in a team."
+			/>
+			<ClassCard
+				href="/classes"
+				title="FITNESS CLASS"
+				body="Condition your body and mind to face the rigors of the ring - and life - head-on."
+			/>
+			<ClassCard
+				href="/classes"
+				title="FIGHT TEAM"
+				body="Want to compete? Start here."
+			/>
+			<p>You can find more information about our class schedule and pricing <a href="/classes">here</a>.</p>
+			<FeedbackForm />
 		</main>
 		<Footer />
 	</body>
