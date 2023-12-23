@@ -3,7 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ClassCard from '../components/ClassCard.astro';
-import FeedbackForm from '../components/FeedbackForm.astro';
+import ContactForm from '../components/ContactForm.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -16,7 +16,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header title={SITE_TITLE} />
 		<main>
 			<h1>We build beasts.</h1>
-			<p></p>
+			<p>It's never too early or too late to begin your Muay Thai journey. Once you've walked through our doors, the hardest part is already over.</p>
+			<h2>Classes</h2>
 			<ClassCard
 				href="/classes"
 				title="MUAY THAI FUNDAMENTALS"
@@ -25,7 +26,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<ClassCard
 				href="/classes"
 				title="KIDS' CLASSES"
-				body="Have your little ones join the Tiny Toroz. Aside from Muay Thai, students will improve their discipline, self-confidence, and ability to work in a team."
+				body="Have your little ones join the Tiny Toroz. Along with Muay Thai, students will develop their discipline, self-confidence, and ability to work in a team."
 			/>
 			<ClassCard
 				href="/classes"
@@ -38,7 +39,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				body="Want to compete? Start here."
 			/>
 			<p>You can find more information about our class schedule and pricing <a href="/classes">here</a>.</p>
-			<FeedbackForm />
+			<h2>Contact Us</h2>
+			<p>Still have some questions? feel free to reach out to us through:</p>
+				<ul>
+					<li>call or text, at <a href="tel:2098985311"><strong>(209) 898-5311</strong></a> </li>
+					<li><a href="https://www.instagram.com/torozmuaythai/"><strong>Instagram</strong></a> private messages,</li>
+				</ul>
+			<p>or through the contact form below.</p>
+			<ContactForm />
 		</main>
 		<Footer />
 	</body>

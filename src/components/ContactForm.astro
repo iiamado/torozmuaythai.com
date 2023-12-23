@@ -1,11 +1,11 @@
 ---
 ---
 
-<div class="feedback-form">
+<div class="contact-form">
   <form
     netlify
     netlify-honeypot
-    name="feedback"
+    name="contact"
     method="POST"
     action="/success">
     <p class="hidden">
@@ -13,34 +13,35 @@
         Dont fill this out if youre human: <input name="bot-field" />
       </label>
     </p>
-    <input type="hidden" name="form-name" value="feedback" />
+    <input type="hidden" name="form-name" value="contact" />
     <label for="name">Name</label>
     <input id="name" type="text" name="name" />
     <label for="email">Email</label>
     <input id="email" type="email" name="email" required />
-    <label for="feedback">Ask any questions you'd like answered below:</label>
-    <textarea id="feedback" wrap="soft" name="feedback" required></textarea>
+    <label for="contact">Ask any questions you'd like answered below:</label>
+    <textarea id="contact" wrap="soft" name="contact" required></textarea>
     <button type="submit"><strong>SUBMIT</strong></button>
   </form>
 </div>
 
 <style>
-.feedback-form {
+.contact-form {
   margin: 40px 40px;
   min-width: 250px;
   width: 45%;
 }
 input, textarea, button {
-  background-color: lightgray;
+  background-color: whitesmoke;
+  border: 0;
   font-size: inherit;
   margin: 15px 0;
   padding: 12px 20px;
   width: 100%;
 }
 button {
-  background-color: teal;
-  border: 1px solid black;
-  color: white;
+  background-color: rgb(255, 229, 83);
+  border: 2px solid black;
+  color: black;
   width: 50%;
 }
 .hidden {

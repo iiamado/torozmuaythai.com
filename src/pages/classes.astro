@@ -24,41 +24,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </tr>
         <tr>
           <td>8:00am - 10:00am</td>
-          <td colspan="2">PERSONALS</td>
+          <td colspan="2" class="class">PERSONALS</td>
         </tr>
         <tr>
           <td>10:30am - 11:30am</td>
-          <td colspan="2">Morning Muay Thai</td>
+          <td colspan="2" class="class">Morning Muay Thai</td>
           <td>Fight Camp</td>
         </tr>
         <tr>
           <td>11:30am - 5:00pm</td>
-          <td colspan="2">PERSONALS</td>
+          <td colspan="2" class="class">PERSONALS</td>
           <td>(ends 1:30pm)</td>
         </tr>
         <tr>
           <td>5:00pm - 6:00pm</td>
-          <td colspan="2">Kids' Class</td>
+          <td colspan="2" class="class">Kids' Class</td>
         </tr>
         <tr>
           <td>6:00pm - 7:00pm</td>
-          <td colspan="2">Fundamental Strength and Conditioning</td>
+          <td colspan="2" class="class">Fundamental Strength and Conditioning</td>
         </tr>
         <tr>
           <td>7:00pm - 8:00pm</td>
-          <td colspan="2">Beginners' Muay Thai</td>
+          <td colspan="2" class="class">Beginners' Muay Thai</td>
         </tr>
         <tr>
           <td>8:00pm - 9:00pm</td>
           <td>-</td>
-          <td>Advanced Muay Thai</td>
+          <td class="class">Advanced Muay Thai</td>
         </tr>
       </table>
       <p>Official classes are <strong>closed</strong> on Sundays.</p>
 
       <h2>Membership Pricing</h2>
       <h3>Classes</h3>
-      <p>Toro Z offers two (2) free trial classes for prospective students.</p>
+      <p>Toro Z offers two (2) free trial classes for prospective students. After that, monthly prices are listed below.</p>
       <table>
         <tr>
           <th></th>
@@ -68,52 +68,56 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </tr>
         <tr>
           <td colspan="2">Adults' Muay Thai</td>
-          <td>125</td>
-          <td>150</td>
+          <td class="price">125</td>
+          <td class="price">150</td>
         </tr>
         <tr>
           <td colspan="2">Adults' Fitness</td>
-          <td>120</td>
-          <td>135</td>
+          <td class="price">120</td>
+          <td class="price">135</td>
         </tr>
         <tr>
           <td colspan="2">Adults' Fitness + Muay Thai</td>
           <td></td>
-          <td>180</td>
+          <td class="price">180</td>
         </tr>
         <tr>
           <td>Kids' Class</td>
           <td>6-8 y/o</td>
-          <td>50</td>
+          <td class="price">50</td>
         </tr>
         <tr>
           <td></td>
           <td>9-12 y/o</td>
-          <td>75</td>
+          <td class="price">75</td>
         </tr>
         <tr>
           <td></td>
           <td>13-17 y/o</td>
-          <td>100</td>
+          <td class="price">100</td>
         </tr>
       </table>
       <h3>Personal Training</h3>
       <table>
         <tr>
+          <th></th>
+          <th>Per session</th>
+        </tr>
+        <tr>
           <th>10 sessions/month</th>
-          <td>50/session</td>
+          <td class="price">50</td>
         </tr>
         <tr>
           <th>8 sessions/month</th>
-          <td>65/session</td>
+          <td class="price">65</td>
         </tr>
         <tr>
           <th>4 sessions/month</th>
-          <td>70/session</td>
+          <td class="price">70</td>
         </tr>
         <tr>
           <th>Drop-In Personals</th>
-          <td>75/session</td>
+          <td class="price">75</td>
         </tr>
       </table>
 
@@ -121,3 +125,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 </html>
+<style>
+  th, .class, .price {
+    text-align: center;
+  }
+  th {
+    padding: 0 1em;
+  }
+  .price {
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(28, 41, 155);
+  }
+</style>
